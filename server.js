@@ -96,7 +96,11 @@ app.post('/api', async (req, res) => {
     // Pass request metadata to api_login so it can fingerprint the device
     // for the "new device login" notification.
     const finalArgs = (args || []).slice();
+    // Nexiash: the SPA's apiRaw helper prepends an empty token to login
+    // calls (multi-tenant convention). api_login / api_login_otp_verify
+    // don't take a token, so strip a leading empty-string before dispatch.
     if (fn === 'api_login' || fn === 'api_login_otp_verify') {
+      if (finalArgs.length > 0 && finalArgs[0] === '') finalArgs.shift();
       finalArgs.push({
         ua: String(req.headers['user-agent'] || ''),
         ip: String(req.headers['x-forwarded-for'] || req.connection?.remoteAddress || '').split(',')[0].trim()
