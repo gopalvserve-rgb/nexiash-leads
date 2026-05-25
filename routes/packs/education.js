@@ -1824,11 +1824,11 @@ framework.register({
     'Education statuses + parent custom fields seeded'
   ],
   nav_items: [
-    { id: 'edudues',     label: '📋 Fee Dues',       icon: '📋' },
-    { id: 'edufees',     label: '💰 Fee Collection', icon: '💰' },
-    { id: 'edustudents', label: '👥 Students',       icon: '👥' },
-    { id: 'edurevenue',  label: '💎 Revenue',        icon: '💎' },
-    { id: 'edureports',  label: '📊 Collection Report', icon: '📊' }
+    { id: 'edudues',     label: 'Fee Dues',       icon: '📋' },
+    { id: 'edufees',     label: 'Fee Collection', icon: '💰' },
+    { id: 'edustudents', label: 'Students',       icon: '👥' },
+    { id: 'edurevenue',  label: 'Revenue',        icon: '💎' },
+    { id: 'edureports',  label: 'Collection Report', icon: '📊' }
   ],
   install,
   uninstall
