@@ -1,3 +1,4 @@
+# Trigger: refresh CI run with Nexiash secrets + new applicationId (2026-05-26)
 # Build a signed multi-tenant Lead CRM Android APK from smartcrm-saas on every push to main,
 # upload it as a workflow artifact, and copy it into public/LeadCRM.apk
 # so the in-app "📱 Get app" → Download APK button serves the latest.
