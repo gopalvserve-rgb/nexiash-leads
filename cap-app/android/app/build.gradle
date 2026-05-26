@@ -5,7 +5,7 @@ android {
     namespace "app.leadcrm.mobile"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.nexiash.leads"
+        applicationId "app.leadcrm.mobile"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 100
