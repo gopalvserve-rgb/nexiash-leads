@@ -3,13 +3,14 @@
   "appName": "Nexiash CRM",
   "webDir": "www",
   "server": {
-    "url": "https://nexiash-leads.up.railway.app/",
+    "url": "https://crm.nexusai.co.in/",
     "cleartext": false,
     "androidScheme": "https",
     "iosScheme": "https",
     "allowNavigation": [
-      "nexiash-leads.up.railway.app",
-      "*.nexiash.com",
+      "crm.nexusai.co.in",
+      "*.nexusai.co.in",
+      "nexiash-app-production.up.railway.app",
       "tel:*",
       "mailto:*",
       "whatsapp:*"
