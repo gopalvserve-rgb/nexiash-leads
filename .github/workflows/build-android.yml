@@ -17,10 +17,6 @@ name: Build Android APK
 on:
   push:
     branches: [main]
-    paths:
-      - 'cap-app/**'
-# Don't trigger on public/** — only the cap-app wrapper changes need to rebuild the APK.
-      - '.github/workflows/build-android.yml'
   workflow_dispatch:
 
 jobs:
